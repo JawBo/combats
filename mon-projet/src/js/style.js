@@ -22,8 +22,21 @@ var paysan ={
     attaque : 7,
     vie : 5
 }
-var nom_guerrier = guerrier.nom;
-var nom_mage = mage.nom;
-var nom_paysan = paysan.nom;
+
+var longueur_nom_guerrier = guerrier.nom.length;
+var longueur_nom_mage = mage.nom.length;
+var longueur_nom_paysan = paysan.nom.length;
+
+var lettre_guerrier = guerrier.nom.charAt(0);
+var lettre_mage = mage.nom.charAt(0);
+var lettre_paysan = paysan.nom.charAt(0);
+
+var etat_guerrier = guerrier.nom.concat(guerrier.arme);
+var etat_mage = mage.nom.concat(mage.arme);
+var etat_paysan = mage.nom.concat(mage.arme);
+
+var entre_guerrier = guerrier.nom.substring(1, 4);
+var entre_mage = mage.nom.substring(1, 4);
+var entre_paysan = paysan.nom.substring(1, 4);
 
 
